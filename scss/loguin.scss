@@ -2,40 +2,28 @@
 
 .tituLoguin{
     color: rgb(0, 0, 0);
-    background-color: #f977ce;
-    background-image: linear-gradient(315deg, #f977ce 0%, #c373f2 74%);
+    background-color: #c370f3;
+    background-image: linear-gradient(315deg, #f58cd2 0%, #ad80f5 74%);
     font-family: $_Crim;
-    font-size: 200%;
+    font-size: 150%;
     font-weight:bolder;
-    text-align: center;
     font-style: italic;
+    text-align: center;
+    border-color: aliceblue;
+    border-style:solid;
+    border-width: 0,1px;
 }
 
 .LoguinForm{
-   margin-top: 1%;
-   display:block;
-   justify-content:center;
-   width: 90%;
-   margin-left: 5%;
-
-   legend{
-       text-align: center;
-       font-weight: bold;
-   }
-   input{
-
-      transition: all 1s;
-   }
+  font-weight: bold;
+  font-family: $_Crim;
 }
 
-.bott{
+legend{
     text-align: center;
+    font-weight: bold;
 }
 
-form input:focus{
-    padding: 30px 70px ;
-    font-size: 200%;
-} 
 
 /*EACH de ejmplo, repito proopiedades en estos elementos*/
 
@@ -48,4 +36,3 @@ form input:focus{
       font-weight: normal;
     }
   }
-  

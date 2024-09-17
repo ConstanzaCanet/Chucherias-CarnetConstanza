@@ -1,0 +1,37 @@
+/*PRIMER BLOQUE QUE CORRESPONDE A LA PARTE DEL CATALOGO*/
+.cata{
+    background-color: #f5e3e6;
+    padding-top: 5%;
+
+    .catafont{
+        font-size: 2rem;
+        font-family: 'Crimson Text', serif;
+        font-weight: bolder;
+        font-style: italic;
+        margin-left: 10%;
+    }
+    
+  @media (max-width: 280px) {
+    .catafont{
+       font-size:1rem ;
+    }
+ }
+
+ 
+    
+    .foto{
+        width: 80%;
+        height: auto;
+    }
+    
+    }
+
+    .Fech{
+        color: rgb(0, 0, 0);
+        font-family: 'Jim Nightshade', cursive;
+        font-size: 80%;
+        font-weight: normal;
+        margin-left: 10%;
+    
+}
+

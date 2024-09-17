@@ -1,16 +1,15 @@
 @import "variables";
 @import "cabecera";
-@import "bloque1";
-@import "bloque2";
-@import "bloque3y4";
-@import "bloque5y6";
+@import "catalogo";
+@import "puntaje";
+@import "tablaComent";
 @import "loguin";
 
 
 
 nav{
-    background-color: #f977ce;
-    background-image: linear-gradient(315deg, #f977ce 0%, #c373f2 74%);
+    background-color: #c370f3;
+    background-image: linear-gradient(315deg, #f58cd2 0%, #ad80f5 74%);
     color: aliceblue;
     font-family:$_Crim;
     font-size: 130%;
@@ -26,42 +25,54 @@ nav{
          background-image: linear-gradient(315deg, #f977ce 0%, #c373f2 74%);
 }
 }
-
-
-
-/*IMAGENES*/
-
-/*Aplico y pruebo MIXINS*/
-
-@mixin foto ($width, $height){
-    width: $width;
-    height: $height;
+/*AQUI TRABAJE UN POCO EL CAROUSEL PARA QUE NO FUERA ALGO QUE OCUPASE TANTO ESPACIO.*/
+.carousel-inner{
+    max-height: 60vh; 
 }
 
-.fotoProducto{
-    @include foto(400px, 400px);
-    border-radius: 10%;
-
-
-    transition: width 2s, height 2s;
+ /*ESCRITURA DEL  CARPUSEL*/
+.carousel-caption{
+    position: absolute; 
+    top: 25%;
+    z-index: 10;
+    color: #fff;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.322);
 }
 
-.fotoProducto:hover{
-   @include foto(800px,600px )
-}    
+/*UTILIZANDO MEDIA PARA CAROUSEL*/
+@media (max-width: 360px) {
+    .carousel-inner{
+       max-height: 60vh;
+    }
+ }
+@media (max-width: 800px) {
+    .carousel-inner{
+       max-height: 20vh;
+    }
+ }
+
+
+@media (max-width: 768px) {
+    .carousel-caption{
+        top: 10%;
+    }
+ }
+
+ @media (max-width: 1024px) {
+    .carousel-inner{
+       max-height: 30vh;
+    }
+    .carousel-caption{
+        top: 30%;
+    }
+ }
+
+
 
 /*BODY*/
 main{
-  background-color:rgb(245, 245, 245);
-
-  font-family: 'Crimson Text', serif;
-  font-style: italic;
-  font-weight: normal;
-  border-color: gray;
-  border-style: solid;
-  border-top: transparent;
-  border-bottom: transparent;
- 
+  background-color:#f5e3e6;
 
 }
 
@@ -97,4 +108,3 @@ footer{
 
 }
 }
-
